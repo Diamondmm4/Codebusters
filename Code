@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Codebusters Study Table</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px 16px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #f4f6f8;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0 0 24px;
+            font-size: 28px;
+        }
+
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 900px;
+            table-layout: fixed;
+        }
+
+        th,
+        td {
+            border: 1px solid #d1d5db;
+            text-align: center;
+            height: 62px;
+        }
+
+        th {
+            background: #e5e7eb;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .row-label {
+            width: 125px;
+            background: #f3f4f6;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 4px;
+        }
+
+        td input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            text-align: center;
+            font-size: 18px;
+            background: transparent;
+            padding: 8px 4px;
+        }
+
+        td input:focus {
+            background: #eef5ff;
+            box-shadow: inset 0 0 0 2px #3b82f6;
+        }
+
+        .button-area {
+            display: flex;
+            justify-content: center;
+            margin-top: 24px;
+        }
+
+        button {
+            border: none;
+            border-radius: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            background: #dc2626;
+            color: white;
+        }
+
+        button:hover {
+            background: #b91c1c;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 18px 10px;
+            }
+
+            h1 {
+                font-size: 23px;
+                margin-bottom: 18px;
+            }
+
+            .table-wrapper {
+                border-radius: 10px;
+            }
+
+            table {
+                min-width: 850px;
+            }
+
+            th,
+            td {
+                height: 56px;
+            }
+
+            .row-label {
+                width: 105px;
+                font-size: 13px;
+            }
+
+            td input {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Codebusters Study Table</h1>
+
+        <div class="table-wrapper">
+            <table id="cipherTable">
+
+                <thead>
+                    <tr>
+                        <th class="row-label">Letter</th>
+
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <th>D</th>
+                        <th>E</th>
+                        <th>F</th>
+                        <th>G</th>
+                        <th>H</th>
+                        <th>I</th>
+                        <th>J</th>
+                        <th>K</th>
+                        <th>L</th>
+                        <th>M</th>
+                        <th>N</th>
+                        <th>O</th>
+                        <th>P</th>
+                        <th>Q</th>
+                        <th>R</th>
+                        <th>S</th>
+                        <th>T</th>
+                        <th>U</th>
+                        <th>V</th>
+                        <th>W</th>
+                        <th>X</th>
+                        <th>Y</th>
+                        <th>Z</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="row-label">Frequency</td>
+
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="row-label">Replacement</td>
+
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+        <div class="button-area">
+            <button onclick="clearTable()">Clear Table</button>
+        </div>
+
+    </div>
+
+    <script>
+        const STORAGE_KEY = "codebusters-study-table";
+
+        const inputs = document.querySelectorAll("#cipherTable input");
+
+        // Load saved entries when the website opens
+        window.addEventListener("load", () => {
+            const savedData = localStorage.getItem(STORAGE_KEY);
+
+            if (!savedData) {
+                return;
+            }
+
+            const values = JSON.parse(savedData);
+
+            inputs.forEach((input, index) => {
+                input.value = values[index] || "";
+            });
+        });
+
+        // Save entries whenever something is typed
+        inputs.forEach(input => {
+            input.addEventListener("input", saveTable);
+        });
+
+        function saveTable() {
+            const values = Array.from(inputs).map(input => input.value);
+
+            localStorage.setItem(
+                STORAGE_KEY,
+                JSON.stringify(values)
+            );
+        }
+
+        function clearTable() {
+            const confirmed = confirm(
+                "Are you sure you want to clear the entire table?"
+            );
+
+            if (!confirmed) {
+                return;
+            }
+
+            inputs.forEach(input => {
+                input.value = "";
+            });
+
+            // Remove the saved table as well
+            localStorage.removeItem(STORAGE_KEY);
+        }
+    </script>
+
+</body>
+</html>
